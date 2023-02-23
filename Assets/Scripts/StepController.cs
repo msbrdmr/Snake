@@ -138,9 +138,6 @@ public class StepController : MonoBehaviour
         score++;
         scoretext.text = score.ToString();
         GameObject newnode = Instantiate(nodeprefab);
-        //get the last two nodes
-        GameObject tailnode = gettail(0);
-        GameObject prevtailnode = gettail(1);
         pushStart(newnode);
         newnode.transform.position = temppos;
         Destroy(currentFood);
